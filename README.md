@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./frontend/src/img/favicon.png" width="128" height="128" style="display: block; margin: 0 auto"/>
+<img src="./Web/frontend/src/img/favicon.png" width="128" height="128" style="display: block; margin: 0 auto"/>
 <h1>Melody Music</h1>
 <p>Introducing Melody Music, your ultimate destination for an immersive and limitless music experience on Webpage! Immerse yourself in a world of unlimited tunes, seamlessly curated for your every mood and moment.</p>
 </div>
@@ -7,10 +7,10 @@
 ---
 
 <p align="center">
-<img src="./Screenshot/1.png" width="95%" />
-<img src="./Screenshot/2.png" width="95%" />
-<img src="./Screenshot/3.png" width="95%" />
-<img src="./Screenshot/4.png" width="95%" />
+<img src="./Web/Screenshot/1.png" width="95%" />
+<img src="./Web/Screenshot/2.png" width="95%" />
+<img src="./Web/Screenshot/3.png" width="95%" />
+<img src="./Web/Screenshot/4.png" width="95%" />
 </p>
 
 ## 🎵 GrooveHub - Your Ultimate Music Experience 🎧
