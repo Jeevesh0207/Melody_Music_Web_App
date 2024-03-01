@@ -1,0 +1,2060 @@
+:root {
+    --red: #f44336;
+    --pink: #e91e62;
+    --purple: #9c27b0;
+    --voilet: #673ab6;
+    --dark_blue: #3f50b5;
+    --light_blue: #2096f3;
+    --dim_light_blue: #00a8f4;
+    --blue_green: #00bcd4;
+    --green: #009688;
+    --light_green: #4caf4f;
+    --soft_green: #8ac049;
+    --yelowish_green: #cddc39;
+    --yellow: #ffeb3a;
+    --orange: #ffc007;
+    --red_pink: #ff2e55;
+    --blacknav: #323232;
+    --tN1MMA: #00c4cc;
+    --_mHLrA: #8b3dff;
+    --hover: #7300e6;
+    --s0dOYA: #5100a8;
+    --DP6qqQ: #1a62ff;
+    --WJ9xxQ: #2e8cff;
+    --cqkW_A: #008009;
+    --KIMsqg: #489d4a;
+    --6iD-Rg: #00660e;
+    --IKngdQ: #db1436;
+    --IIHy3Q: #ff4757;
+    --9xoqAg: #b30024;
+    ---VkLcA: #008009;
+    --2sYJaA: #1a62ff;
+    --uYOVog: #ad5a00;
+    --05tvjQ: #db1436;
+    --U8IpiA: #b30024;
+    --gIHunw: #db1436;
+    --tkbyNg: #8b3dff;
+    --elFFpw: #7300e6;
+    --3zRlag: #8b3dff;
+}
+
+
+.Home {
+    margin-bottom: 73px;
+}
+
+/* --------------------------Home----------------------- */
+
+.Slider,
+.Slider .container i,
+.Slider .container .Box .Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slider {
+    width: 100%;
+    height: 300px;
+    /* background-color: yellow; */
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7917760854341737) 0%, rgba(0, 0, 0, 0.7945772058823529) 100%); */
+    background-color: #121212;
+}
+
+.Slider .container {
+    width: 100%;
+    height: 260px;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.Slider .container .Box {
+    min-width: 500px;
+    /* min-width: 50%; */
+    height: 100%;
+    /* background-color: turquoise; */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.Slider .container i {
+    position: absolute;
+    font-size: 30px;
+    width: 25px;
+    height: 60px;
+    /* background-color: teal; */
+    cursor: pointer;
+    z-index: 2;
+    color: #fff;
+    background-color: #9494945b;
+    border-radius: 3px;
+}
+
+.Slider .container i:nth-of-type(1) {
+    left: 20px;
+    top: calc(50% - 30px);
+}
+
+.Slider .container i:nth-of-type(2) {
+    right: 20px;
+    top: calc(50% - 30px);
+}
+
+.Slider .container .Box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+.Slider .container .Leftanimation img {
+    animation: LeftMove 1s ease 0s 1 normal forwards;
+}
+
+
+@keyframes LeftMove {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.Slider .container .Rightanimation img {
+    /* transition: all 1s; */
+    animation: RightMove 1s ease 0s 1 normal forwards;
+}
+
+
+@keyframes RightMove {
+    0% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.Slider .container .Box .Name {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Slider .container .Box .Name h1 {
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width:516px) {
+    .Slider .container .Box {
+        min-width: 350px;
+        height: 200px;
+    }
+
+    .Slider {
+        height: 220px;
+    }
+
+    .Slider .container {
+        height: 200px;
+    }
+
+    .Slider .container i {
+        font-size: 20px;
+        width: 20px;
+        height: 50px;
+    }
+
+    .Slider .container i:nth-of-type(1) {
+        left: 10px;
+        top: calc(50% - 25px);
+    }
+
+    .Slider .container i:nth-of-type(2) {
+        right: 10px;
+        top: calc(50% - 25px);
+    }
+
+    .Slider .container .Box .Name h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:364px) {
+    .Slider .container .Box {
+        min-width: 310px;
+        height: 170px;
+    }
+
+    .Slider {
+        height: 190px;
+    }
+
+    .Slider .container {
+        height: 170px;
+    }
+
+    .Slider .container .Box .Name h1 {
+        font-size: 25px;
+    }
+}
+
+/* ------------------MusicPlayer--------------------- */
+
+.Home {
+    position: relative;
+}
+
+.MusicPlayer,
+.MusicPlayer .Container .Mid .SBox,
+.MusicPlayer .Container .Right,
+.MusicPlayer .MusicLoader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MusicPlayer {
+    position: fixed;
+    bottom: -1px;
+    width: 100%;
+    min-height: 74px;
+    /* background-color: aquamarine; */
+    background-color: #242424;
+    background-color: #121212;
+    z-index: 3;
+
+    color: #fff;
+}
+
+.MusicPlayer .Container {
+    width: 100%;
+    height: 50px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.MusicPlayer .Container .Left {
+    width: 300px;
+    height: 100%;
+    /* background-color: violet; */
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.MusicPlayer .Container .Left .songpic {
+    width: 45px;
+    height: 45px;
+    /* background-color: tomato; */
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+
+.MusicPlayer .Container .Left .songpic img {
+    width: 100%;
+    height: 100%;
+}
+
+.MusicPlayer .Container .Left .infosong {
+    width: 200px;
+    height: 100%;
+    /* background-color: teal; */
+}
+
+.MusicPlayer .Container .Left .infosong p {
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.MusicPlayer .Container .Left .infosong p:nth-of-type(1) {
+    padding: 6px 0 0 0;
+}
+
+.MusicPlayer .Container .Left .infosong p:nth-of-type(2) {
+    padding: 6px 0 0 0;
+    font-size: 12px;
+}
+
+.MusicPlayer .Container .Mid {
+    width: 300px;
+    height: 100%;
+    /* background-color: #00660e; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.MusicPlayer .Container .Mid .L,
+.MusicPlayer .Container .Mid .R {
+    width: 50px;
+    height: 100%;
+    /* background-color: #009688; */
+}
+
+.MusicPlayer .Container .Mid .M {
+    width: 120px;
+    height: 100%;
+    /* background-color: #00bcd4; */
+}
+
+.MusicPlayer .Container .Mid .SBox {
+    font-size: 20px;
+
+}
+
+.MusicPlayer .Container .Mid .SBox i {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.MusicPlayer .Container .Mid .M {
+    gap: 10px;
+}
+
+.MusicPlayer .Container .Mid .M i:nth-of-type(2) {
+    font-size: 40px;
+    /* color: #ff5a66; */
+    border-radius: 100%;
+    border: none;
+    /* background: #fff; */
+    color: #1bd760;
+    background-color: #121212;
+    border-radius: 50%;
+}
+
+.MusicPlayer .Container .Right {
+    width: 300px;
+    height: 100%;
+    /* background-color: #00a8f4; */
+    font-size: 20px;
+    gap: 15px;
+}
+
+.MusicPlayer .Container .Right a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.MusicPlayer .Container .Right i {
+    cursor: pointer;
+}
+
+.MusicPlayer .Container .Right .speaker {
+    width: 120px;
+    height: 100%;
+    /* background-color: #2096f3; */
+    display: flex;
+    align-items: center;
+}
+
+.MusicPlayer .Container .Right .speaker .volumebar {
+    width: 73%;
+    height: 4px;
+    /* background-color: var(--voilet); */
+    margin-left: 3px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.MusicPlayer .PlayerLine {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 0;
+    /* background-color: #00660e; */
+}
+
+.MusicPlayer .PlayerLine input[type='range'] {
+
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    /* background-color: #ff5a66; */
+    background-color: #1bd760;
+}
+
+.MusicPlayer .PlayerLine input[type="range"] {
+    /* background-color: #ff5a66; */
+    height: 3px;
+}
+
+.MusicPlayer .PlayerLine input[type="range"]:hover {
+    height: 4px;
+}
+
+
+.MusicPlayer .PlayerLine input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.MusicPlayer .PlayerLine input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: none;
+
+    border-radius: 50%;
+    background-color: red;
+}
+
+.MusicPlayer .Container .Right .speaker .volumebar {
+    position: relative;
+}
+
+.MusicPlayer .Container .Right .speaker .volumebar input[type='range'] {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+    transform: rotateX(0deg);
+}
+
+.MusicPlayer .Container .Right .speaker .volumebar input[type='range'] {
+    /* background-color: #ff5a66; */
+    background-color: #1bd760;
+    height: 4px;
+}
+
+.MusicPlayer .Container .Right .speaker .volumebar input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: var(--red_pink);
+    border-radius: 50%;
+}
+
+
+.MusicPlayer .Container .Right .speaker .volumebar input[type='range']::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: var(--red_pink);
+
+}
+
+.MusicPlayer .Container .Right p {
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width:786px) {
+    .MusicPlayer .Container .Left .infosong {
+        display: none;
+    }
+
+    .MusicPlayer .Container .Mid .L,
+    .MusicPlayer .Container .Mid .R {
+        display: none;
+    }
+
+    .MusicPlayer .Container .Mid,
+    .MusicPlayer .Container .Left {
+        width: 100px;
+    }
+
+    .MusicPlayer .Container .Right p,
+    .MusicPlayer .Container .Right .speaker {
+        display: none;
+
+    }
+
+    .MusicPlayer .Container .Right {
+        width: 100px;
+    }
+}
+
+
+.MusicPlayer .MusicLoader {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 75px;
+    /* background-color: aquamarine; */
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.MusicPlayer .MusicLoader .circle {
+    width: 30px;
+    aspect-ratio: 1;
+    /* background-color: var(--yelowish_green); */
+    border-radius: 50%;
+    border: 3px solid #ff2e55;
+    border-top: 3px solid #fff;
+    animation: musiccircleload 2s linear infinite;
+}
+
+@keyframes musiccircleload {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+/* ------------------TopHits--------------------- */
+
+.TopHits .List .Box .Play,
+.TopHits .Heading i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TopHits {
+    width: 100%;
+    min-height: 270px;
+    /* background-color: #009688; */
+    background-color: #242424;
+    background-color: #121212;
+    color: #fff;
+}
+
+.TopHits .Heading {
+    width: 100%;
+    height: 50px;
+    /* background-color: #00a8f4; */
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.TopHits .Heading {
+    position: relative;
+}
+
+.TopHits .Heading i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 15px);
+    right: 60px;
+    font-size: 28px;
+    color: #dedddc;
+    cursor: pointer;
+}
+
+.TopHits .Heading i:nth-of-type(2) {
+    right: 20px;
+}
+
+.TopHits .List {
+    width: 100%;
+    min-height: 210px;
+    /* background-color: #ffc007; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: scroll;
+    padding: 0 10px;
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.TopHits .List::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.TopHits .List .Box {
+    min-width: 170px;
+    height: 195px;
+    /* background-color: var(--tkbyNg); */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.TopHits .List .Box .Poster {
+    width: 100%;
+    height: 150px;
+    /* background-color: var(--yellow); */
+}
+
+.TopHits .List .Box .Text {
+    width: 100%;
+    height: 45px;
+    /* background-color: #4caf4f; */
+}
+
+.TopHits .List .Box .Text p {
+    color: #eaeaea;
+}
+
+.TopHits .List .Box .Text p:nth-of-type(1) {
+    padding: 5px 0 0 5px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.TopHits .List .Box .Text p:nth-of-type(2) {
+    padding: 3px 0 0 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.TopHits .List .Box .Poster {
+    position: relative;
+}
+
+.TopHits .List .Box .Poster img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(90%);
+    object-fit: cover;
+}
+
+.TopHits .List .Box .Play {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.TopHits .List .Box .Play i {
+    font-size: 45px;
+    cursor: pointer;
+    z-index: 1;
+    color: #fff;
+    color: #1bd760;
+    background-color: #121212;
+    border-radius: 50%;
+}
+
+.TopHits .List .Box .Play i:nth-of-type(2) {
+    font-size: 34px;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: none;
+}
+
+.TopHits .List .Box .Poster:hover .Play {
+    display: flex;
+}
+
+@media screen and (min-width:900px) {
+    .TopHits .List .Box .Poster:hover img {
+        filter: brightness(50%);
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    .TopHits .List .Box .Play i:nth-of-type(1) {
+        display: none;
+    }
+
+    .TopHits .List .Box .Play i:nth-of-type(2) {
+        display: block;
+    }
+
+    .TopHits .List .Box .Play {
+        display: block;
+    }
+
+    .TopHits .List .Box .Poster img {
+        filter: brightness(80%);
+    }
+}
+
+@media screen and (max-width:516px) {
+    .TopHits .List .Box {
+        min-width: 140px;
+    }
+
+    .TopHits .List .Box {
+        height: 185px;
+    }
+
+    .TopHits .List .Box .Poster {
+        height: 140px;
+    }
+
+    .TopHits {
+        min-height: 250px;
+    }
+
+    .TopHits .List {
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .TopHits .List .Box {
+        min-width: 140px;
+    }
+
+    .TopHits .List .Box {
+        height: 175px;
+    }
+
+    .TopHits .List .Box .Poster {
+        height: 130px;
+    }
+
+    .TopHits {
+        min-height: 240px;
+    }
+
+    .TopHits .List {
+        min-height: 190px;
+    }
+
+    .TopHits .Heading h2 {
+        font-size: 20px;
+    }
+
+    .TopHits .Heading i {
+        font-size: 24px;
+    }
+}
+
+
+/* ------------------SingerPlaylist-------------------- */
+
+.SingerPlaylist .Left .Top,
+.SingerPlaylist .Right .Top .Pic,
+.SingerPlaylist .Left .Bottom .showmore,
+.SingerPlaylist .Right .Bottom .Box .No,
+.SingerPlaylist .Right .Bottom .Box .Options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SingerPlaylist {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    /* background-color: #0d0f13ca; */
+    background-color: #2b4162;
+    background-image: linear-gradient(180deg, #192434 0%, #12100e 74%);
+
+}
+
+.SingerPlaylist .Left {
+    width: 300px;
+    min-height: 100vh;
+    /* background-color: #262626; */
+    color: #fff;
+}
+
+.SingerPlaylist .Right {
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    color: #fff;
+
+}
+
+.SingerPlaylist .Left .Top {
+    width: 100%;
+    height: 290px;
+}
+
+.SingerPlaylist .Left .Top .SingerProfile {
+    width: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.SingerPlaylist .Left .Top .SingerProfile img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+    object-fit: cover;
+}
+
+.SingerPlaylist .Left .Bottom {
+    width: 100%;
+    height: 300px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.SingerPlaylist .Left .Bottom p {
+    height: auto;
+    width: auto;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.SingerPlaylist .Left .Bottom p:nth-of-type(2) {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.SingerPlaylist .Left .Bottom .showmore {
+    width: 100%;
+    height: 30px;
+}
+
+.SingerPlaylist .Left .Bottom .showmore a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.SingerPlaylist .Left .Bottom .showmore i {
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.SingerPlaylist .Right .Top {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    /* background-color: #121212d9; */
+}
+
+.SingerPlaylist .Right .Top .Pic {
+    width: 200px;
+    height: 100%;
+    display: none;
+}
+
+.SingerPlaylist .Right .Top .Pic .SingerProfile {
+    width: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.SingerPlaylist .Right .Top .Pic .SingerProfile img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(80%);
+    object-fit: cover;
+}
+
+.SingerPlaylist .Right .Top .Info {
+    width: 80%;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.SingerPlaylist .Right .Top .Info h1 {
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+}
+
+
+
+.SingerPlaylist .Right p {
+    color: #e7e7e7;
+}
+
+
+
+.SingerPlaylist .Right .Bottom .Box {
+    width: 100%;
+    height: 70px;
+    /* background-color: gold; */
+    display: flex;
+    gap: 5px;
+}
+
+.SingerPlaylist .Right .Bottom .BoxD {
+    height: 40px;
+}
+
+.SingerPlaylist .Right .Bottom .Box p {
+    font-size: 14px;
+}
+
+.SingerPlaylist .Right .Bottom .Box .No {
+    min-width: 25px;
+    width: 5%;
+    height: 100%;
+    /* background-color: #00660e; */
+}
+
+@media screen and (min-width:900px) {
+    .SingerPlaylist .Right .Bottom .BoxHover {
+        cursor: pointer;
+    }
+
+    .SingerPlaylist .Right .Bottom .BoxHover:hover {
+        background-color: #6f6f6f8d;
+    }
+}
+
+.SingerPlaylist .Right .Bottom .Box .SongDetail {
+    min-width: 300px;
+    width: 25%;
+    height: 100%;
+    /* background-color: var(--soft_green); */
+    display: flex;
+    align-items: center;
+}
+
+.SingerPlaylist .Right .Bottom .Box .SongDetail .SmallPic {
+    width: 45px;
+    aspect-ratio: 1;
+    /* background-color: red; */
+    border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.SingerPlaylist .Right .Bottom .Box .SongDetail .SmallPic img {
+    width: 100%;
+    height: 100%;
+}
+
+.SingerPlaylist .Right .Bottom .Box .SongDetail p {
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.SingerPlaylist .Right .Bottom .Box .Artist {
+    min-width: 200px;
+    width: 16%;
+    height: 100%;
+    /* background-color: var(--tkbyNg); */
+    display: flex;
+    align-items: center;
+}
+
+
+.SingerPlaylist .Right .Bottom .Box .Album {
+    min-width: 200px;
+    width: 16%;
+    height: 100%;
+    /* background-color: #00660e; */
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.SingerPlaylist .Right .Bottom .Box .Options {
+    width: 16%;
+    height: 100%;
+    /* background-color: orange; */
+    gap: 20px;
+}
+
+.SingerPlaylist .Right .Bottom .Box .Options i {
+    font-size: 45px;
+    cursor: pointer;
+    color: #1bd760;
+    background-color: #121212;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.SingerPlaylist .Right .Bottom .BoxD p {
+    font-size: 12px;
+}
+
+
+
+.Playlist .SingerDetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Playlist .SingerDetail {
+    width: 100%;
+    min-height: 250px;
+    /* background-color: #008009; */
+    background-color: #121212;
+    background-color: #12100e;
+
+
+}
+
+.Playlist .SingerDetail .Container {
+    width: 80%;
+    min-height: 150px;
+    /* background-color: var(--yellow); */
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #2c2c2cca;
+    color: #eaeaea;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Playlist .SingerDetail .Container i:nth-of-type(1) {
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+    font-size: 30px;
+}
+
+.Playlist .SingerDetail .Container i:nth-of-type(2) {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    font-size: 30px;
+}
+
+.Playlist {
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* background-color: var(--yelowish_green); */
+    margin-bottom: 73px;
+}
+
+.Playlist .LoaderPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+@media screen and (max-width:1084px) {
+    .SingerPlaylist .Right .Bottom .Box .SongDetail {
+        min-width: 250px
+    }
+
+    .SingerPlaylist .Right .Bottom .Box .Artist {
+        min-width: 150px
+    }
+
+    .SingerPlaylist .Right .Bottom .Box .Album {
+        min-width: 150px
+    }
+}
+
+@media screen and (max-width:972px) {
+    .SingerPlaylist .Right .Top .Pic {
+        display: flex;
+    }
+
+    .SingerPlaylist .Left {
+        display: none;
+    }
+
+    .Playlist .SingerDetail {
+        display: none
+    }
+
+    .SingerPlaylist .Right {
+        width: 100%;
+    }
+
+    .SingerPlaylist .Right .Top {
+        height: 190px;
+    }
+
+    .SingerPlaylist .Right .Top .Info h1 {
+        font-size: 60px;
+    }
+
+    .SingerPlaylist .Right .Bottom .Box .SongDetail .SmallPic {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    .SingerPlaylist .Right .Bottom .Box .Artist,
+    .SingerPlaylist .Right .Bottom .Box .Album {
+        display: none;
+    }
+
+    .SingerPlaylist .Right .Top .Info h1 {
+        font-size: 3rem;
+    }
+
+    .SingerPlaylist .Right .Bottom .Box .SongDetail {
+        width: 80%;
+    }
+
+    .SingerPlaylist .Right .Top .Info .TotalTime p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .SingerPlaylist .Right .Bottom .Box .Options i {
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width:482px) {
+    .SingerPlaylist .Right .Top .Info h1 {
+        font-size: 2rem;
+    }
+
+    .SingerPlaylist .Right .Top .Pic {
+        width: 150px;
+    }
+
+    .SingerPlaylist .Right .Top {
+        height: 150px;
+    }
+
+    .SingerPlaylist .Right .Top .Info .TotalTime {
+        display: none;
+    }
+
+    .SingerPlaylist .Right .Bottom .PlayAll i {
+        font-size: 40px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:346px) {
+    .SingerPlaylist .Right .Top .Info h1 {
+        font-size: 23px;
+    }
+
+    .SingerPlaylist .Right .Bottom .Box .SongDetail p {
+        font-size: 15px;
+    }
+
+    .SingerPlaylist .Right .Bottom .Box .SongDetail {
+        min-width: 120px;
+        width: 75%;
+    }
+}
+
+/* ------------------Top Artist-------------------- */
+
+
+.TopArtistList .ArtistBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TopArtistList .ArtistBox {
+    width: 180px;
+    height: 190px;
+    /* background-color: var(--yelowish_green); */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.TopArtistList .ArtistBox .Pic {
+    width: 160px;
+    aspect-ratio: 1;
+    /* background-color: var(--uYOVog); */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.TopArtistList .ArtistBox .Pic img {
+    filter: brightness(80%);
+    object-fit: cover;
+
+}
+
+.TopArtistList .ArtistBox p {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+/* ------------------Footer-------------------- */
+
+.Footer .Left,
+.Footer .Mid,
+.Footer .Right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer {
+    width: 100%;
+    min-height: 60px;
+    /* background-color: #00660e; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .Left {
+    width: 200px;
+    min-height: 60px;
+    /* background: var(--uYOVog); */
+}
+
+.Footer .Left img {
+    width: 40px;
+}
+
+.Footer .Left h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    color: #6ee9a7;
+}
+
+.Footer .Mid {
+    width: 300px;
+    min-height: 60px;
+    /* background: #00a8f4; */
+}
+
+.Footer .Mid p {
+    font-size: 14px;
+    color: #eaeaea;
+}
+
+.Footer .Mid span {
+    font-weight: 600;
+    color: #6ee9a7;
+}
+
+.Footer .Right {
+    width: 200px;
+    min-height: 60px;
+    /* background: #ffc007; */
+    gap: 15px;
+}
+
+.Footer .Right i {
+    font-size: 28px;
+    color: #6ee9a7;
+    /* color: #1bd760; */
+    cursor: pointer;
+}
+
+@media screen and (max-width:630px) {
+
+    .Footer {
+        display: none;
+    }
+}
+
+/* ------------------Search-------------------- */
+
+.Search .SearchBar,
+.Search .SearchBar .Bar .Icon,
+.Search .SearchBar .Bar .picicon,
+.Search .Result .Box .Poster .Play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Search {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    /* background-color: #00660e; */
+    background-color: #2b4162;
+    background-image: linear-gradient(180deg, #2b4162 0%, #12100e 74%);
+    margin-bottom: 73px;
+
+}
+
+.Search .SearchBar {
+    width: 100%;
+    height: 70px;
+    /* background-color: var(--yelowish_green); */
+}
+
+.Search .SearchBar .Bar {
+    width: 600px;
+    height: 50px;
+    /* background-color: #00a8f4; */
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.Search .SearchBar .Bar .picicon {
+    width: 60px;
+    height: 100%;
+    /* background-color: var(--yelowish_green); */
+    background-color: #12100e;
+}
+
+.Search .SearchBar .Bar .Icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.Search .SearchBar .Bar input {
+    width: calc(100% - 60px);
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    /* padding-left: 10px; */
+    padding-right: 70px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #12100e;
+}
+
+.Search .SearchBar .Bar .picicon img {
+    width: 35px;
+    margin-top: 2px;
+}
+
+.Search .SearchBar .Bar .Icon i {
+    font-size: 23px;
+    color: #fff;
+
+}
+
+@media screen and (max-width:618px) {
+    .Search .SearchBar .Bar {
+        width: 95%;
+    }
+}
+
+.Search .BackLoad {
+    width: 100%;
+    min-height: calc(100vh - 130px);
+    /* background-color: #008009; */
+}
+
+.Search .BackLoad {
+    position: relative;
+}
+
+.Search .Result {
+    width: 100%;
+    min-height: 300px;
+    /* background-color: #009688; */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Search .Result .Box {
+    width: 160px;
+    min-height: 195px;
+    /* background-color: var(--yelowish_green); */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #121212;
+}
+
+.Search .Result .Box .Poster {
+    width: 100%;
+    height: 150px;
+    /* background-color: #00c4cc; */
+    position: relative;
+}
+
+.Search .Result .Box .Text {
+    width: 100%;
+    min-height: 45px;
+    /* background-color: var(--voilet); */
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+
+.Search .Result .Box .Poster .Play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+.Search .Result .Box .Poster img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(90%);
+    /* object-fit: cover; */
+}
+
+.Search .Result .Box .Poster .Play i {
+    font-size: 45px;
+    cursor: pointer;
+    z-index: 1;
+    color: #1bd760;
+    background-color: #121212;
+    border-radius: 50%;
+}
+
+.Search .Result .Box .Poster .Play i:nth-of-type(2) {
+    font-size: 34px;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: none;
+}
+
+.Search .Result .Box .Poster:hover .Play {
+    display: flex;
+}
+
+.Search .Result .Box p {
+    font-size: 13px;
+    padding-top: 4px;
+    text-align: center;
+    color: #fff;
+}
+
+.Search .Result .Box p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.Search .LoaderPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+}
+
+.Search .LoaderPage img {
+    width: 50px;
+}
+
+.Search .LoaderPage .circle {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (min-width:900px) {
+    .Search .Result .Box .Poster:hover img {
+        filter: brightness(50%);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .Search .Result .Box .Poster .Play {
+        display: block;
+    }
+
+    .Search .Result .Box .Poster .Play i:nth-of-type(1) {
+        display: none;
+    }
+
+    .Search .Result .Box .Poster .Play i:nth-of-type(2) {
+        display: block;
+    }
+
+    .Search .Result .Box .Poster img {
+        filter: brightness(80%);
+    }
+}
+
+/* ------------------Profile-------------------- */
+
+.Profile .TopBanner,
+.Profile .EditBanner,
+.Profile .EditBanner .container .Top,
+.Profile .EditBanner .container .Bottom form,
+.Profile .EditBanner .container .Top .Pic,
+.Profile .BottomBanner .Head {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.Profile {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    /* background-color: #00660e; */
+    position: relative;
+    margin-bottom: 73px;
+    /* background-color: #0d0a0b;
+    background-image: linear-gradient(0deg, #0d0a0b 0%, #009fc2 74%); */
+
+}
+
+.Profile .TopBanner {
+    width: 100%;
+    min-height: 250px;
+    /* background-color: var(--yelowish_green); */
+    gap: 15px;
+    position: relative;
+    background-color: #0e1e25;
+}
+
+.Profile .TopBanner .Pic {
+    width: 200px;
+    aspect-ratio: 1;
+    /* background-color: #00a8f4; */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+.Profile .TopBanner .Pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Profile .TopBanner .Text h1 {
+    font-size: 80px;
+    color: #fff
+}
+
+
+
+.Profile .TopBanner i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.Profile .TopBanner i:nth-of-type(2) {
+    top: 60px;
+    right: 16px;
+}
+
+@media screen and (max-width:750px) {
+    .Profile .TopBanner .Pic {
+        width: 150px;
+    }
+
+    .Profile .TopBanner i {
+        font-size: 22px;
+    }
+
+    .Profile .TopBanner .Text h1 {
+        font-size: 60px;
+    }
+
+    .Profile .TopBanner {
+        min-height: 180px;
+    }
+
+    .Profile .TopBanner i {
+        top: 10px;
+        right: 10px;
+    }
+
+    .Profile .TopBanner i:nth-of-type(2) {
+        top: 45px;
+        right: 7px;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .Profile .TopBanner .Pic {
+        width: 120px;
+    }
+
+    .Profile .TopBanner .Text h1 {
+        font-size: 35px;
+    }
+
+    .Profile .TopBanner {
+        min-height: 190px;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+.Profile .EditBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color: #00a8f4; */
+    z-index: 1;
+    display: none;
+    backdrop-filter: blur(4px);
+}
+
+.Profile .EditBanner .container {
+    width: 400px;
+    min-height: 350px;
+    /* background-color: var(--uYOVog); */
+    background-color: #121212;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.Profile .EditBanner .container .Top {
+    width: 100%;
+    height: 200px;
+    /* background-color: #009688; */
+    border-radius: 5px 5px 0 0;
+}
+
+.Profile .EditBanner .container .Top .Pic {
+    width: 170px;
+    aspect-ratio: 1;
+    /* background-color: #192434; */
+    background-color: #dadada;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Profile .EditBanner .container .Top .Pic i {
+    position: absolute;
+    font-size: 30px;
+    top: calc(50% - 25px);
+    left: calc(50% - 9px);
+}
+
+
+
+.Profile .EditBanner .container .Top .Pic p {
+    position: absolute;
+    padding-left: 5px;
+    box-sizing: border-box;
+    top: calc(54%);
+}
+
+.Profile .EditBanner .container .Top .Pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.Profile .EditBanner .container .Top .Pic input[type='file'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.Profile .EditBanner .container .Top .Pic input[type='file']::file-selector-button {
+    display: none;
+}
+
+.Profile .EditBanner .container .Top .Pic input[type='file'] {
+    color: transparent;
+}
+
+.Profile .EditBanner .container .close i {
+    position: absolute;
+    top: -14px;
+    right: -10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #121212;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+.Profile .EditBanner .container .Bottom {
+    width: 100%;
+    min-height: 150px;
+    /* background-color: #1bd760; */
+    border-radius: 0 0 5px 5px;
+}
+
+.Profile .EditBanner .container .Bottom form {
+    width: 100%;
+    min-height: 150px;
+    /* background-color: #87c5bf; */
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.Profile .EditBanner .container .Bottom form .Row {
+    width: 100%;
+    height: 50px;
+    /* background-color: #673ab6; */
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.Profile .EditBanner .container .Bottom form .Name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Profile .EditBanner .container .Bottom form .Name .FName,
+.Profile .EditBanner .container .Bottom form .Name .LName {
+    width: 49%;
+    height: 100%;
+    background-color: #0e1e25;
+    position: relative;
+}
+
+.Profile .EditBanner .container .Bottom form .Row input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.Profile .EditBanner .container .Bottom form .Username {
+    position: relative;
+}
+
+.Profile .EditBanner .container .Bottom form .Row i {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 7px;
+    font-size: 16px;
+}
+
+.Profile .EditBanner .container .Bottom form .Username i {
+    left: 9px;
+}
+
+.Profile .EditBanner .container .Bottom form .Row button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #02aaf7;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.Profile .EditBanner .container .Bottom form .Row button:hover {
+    background-color: #00a7f4e8;
+}
+
+@media screen and (max-width:450px) {
+    .Profile .EditBanner .container {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .Profile .EditBanner .container .Bottom form .Row {
+        height: 45px;
+    }
+
+}
+
+.Profile .BottomBanner {
+    width: 100%;
+    min-height: calc(100vh - 250px);
+    background-color: #2b4162;
+    background-image: linear-gradient(180deg, #2b4162 0%, #12100e 74%);
+
+}
+
+.Profile .BottomBanner .Head {
+    width: 100%;
+    height: 50px;
+    background-color: #121212;
+    color: #fff;
+}
+
+.Profile .BottomBanner .Head i {
+    font-size: 30px;
+    padding-left: 10px;
+    color: var(--red_pink);
+    color: #1bd760;
+    background-color: #121212;
+}
+
+@media screen and (max-width:520px) {
+    .Profile .BottomBanner .Head h2 {
+        font-size: 20px
+    }
+
+    .Profile .BottomBanner .Head i {
+        font-size: 20px;
+    }
+}
+
+.Profile .LoaderPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.Profile .LoaderPage img {
+    width: 50px;
+}
+
+.Profile .LoaderPage .circle {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ------------------Error------------------- */
+
+.Error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Error {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #008009; */
+    background-color: #fff;
+}
+
+.Error .container {
+    width: 50%;
+    height: 50%;
+    /* background-color: #009688; */
+}
+
+.Error .container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ------------------SongList------------------ */
+
+.Profile .BottomBanner .SongList .Song .Right,
+.Profile .BottomBanner .SongList .Song .Left .No,
+.Profile .BottomBanner .SongList .Song .Left .Info .smallpic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile .BottomBanner .SongList {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Profile .BottomBanner .SongList {
+    width: 100%;
+    min-height: calc(100vh - 300px);
+    /* background-color: #009688; */
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.Profile .BottomBanner .SongList .Song {
+    width: 70%;
+    height: 50px;
+    /* background-color: #00a8f4; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #ffffff22; */
+    background-color: #ffffff0c;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #e2e2e2;
+}
+
+@media screen and (min-width:900px) {
+    .Profile .BottomBanner .SongList .Song:hover {
+        /* background-color: #ffffff0c; */
+        background-color: #ffffff22;
+
+    }
+}
+
+
+
+
+
+.Profile .BottomBanner .SongList .Song .Left {
+    width: 350px;
+    height: 100%;
+    /* background-color: var(--uYOVog); */
+    display: flex;
+}
+
+.Profile .BottomBanner .SongList .Song .Left .No {
+    width: 70px;
+    height: 100%;
+    /* background-color: var(--tN1MMA); */
+}
+
+.Profile .BottomBanner .SongList .Song .Left .No p {
+    font-size: 13px;
+
+}
+
+.Profile .BottomBanner .SongList .Song .Left .Info {
+    width: calc(100% - 70px);
+    height: 100%;
+    /* background-color: var(--yelowish_green); */
+    display: flex;
+}
+
+.Profile .BottomBanner .SongList .Song .Left .Info .smallpic {
+    width: 60px;
+    height: 100%;
+    /* background-color: var(--soft_green); */
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.Profile .BottomBanner .SongList .Song .Left .Info .smallpic .pic {
+    width: 80%;
+    height: 75%;
+    background-color: var(--yellow);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.Profile .BottomBanner .SongList .Song .Left .Info .smallpic .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Profile .BottomBanner .SongList .Song .Left .Info .detail {
+    width: calc(100% - 60px);
+    height: 100%;
+    /* background-color: var(--red_pink); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Profile .BottomBanner .SongList .Song .Left .Info .detail p {
+    font-size: 14px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.Profile .BottomBanner .SongList .Song .Left .Info .detail p:nth-of-type(2) {
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+.Profile .BottomBanner .SongList .Song .Right {
+    width: 100px;
+    height: 100%;
+    /* background-color: #0e1e25; */
+}
+
+.Profile .BottomBanner .SongList .Song .Right i {
+    font-size: 40px;
+    cursor: pointer;
+    color: #1bd760;
+    background-color: #121212;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:990px) {
+    .Profile .BottomBanner .SongList .Song .Right {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .Profile .BottomBanner .SongList .Song {
+        width: 100%;
+    }
+
+    .Profile .BottomBanner .SongList .Song .Left .No {
+        width: 20px;
+    }
+
+    .Profile .BottomBanner .SongList .Song .Left {
+        width: 400px;
+    }
+}

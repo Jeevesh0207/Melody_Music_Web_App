@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  scrollbar-width: thin;
+}
+
+:root {
+  --red: #f44336;
+  --pink: #e91e62;
+  --purple: #9c27b0;
+  --voilet: #673ab6;
+  --dark_blue: #3f50b5;
+  --light_blue: #2096f3;
+  --dim_light_blue: #00a8f4;
+  --blue_green: #00bcd4;
+  --green: #009688;
+  --light_green: #4caf4f;
+  --soft_green: #8ac049;
+  --yelowish_green: #cddc39;
+  --yellow: #ffeb3a;
+  --orange: #ffc007;
+  --red_pink: #ff2e55;
+  --blacknav: #323232;
+  --tN1MMA: #00c4cc;
+  --_mHLrA: #8b3dff;
+  --hover: #7300e6;
+  --s0dOYA: #5100a8;
+  --DP6qqQ: #1a62ff;
+  --WJ9xxQ: #2e8cff;
+  --cqkW_A: #008009;
+  --KIMsqg: #489d4a;
+  --6iD-Rg: #00660e;
+  --IKngdQ: #db1436;
+  --IIHy3Q: #ff4757;
+  --9xoqAg: #b30024;
+  ---VkLcA: #008009;
+  --2sYJaA: #1a62ff;
+  --uYOVog: #ad5a00;
+  --05tvjQ: #db1436;
+  --U8IpiA: #b30024;
+  --gIHunw: #db1436;
+  --tkbyNg: #8b3dff;
+  --elFFpw: #7300e6;
+  --3zRlag: #8b3dff;
+}
+
+.App{
+  position: relative;
+  background-color: #121212;
+}
+
+.Header .Left,
+.Header .Right ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+  color: #fff;
+}
+
+.Header .Left{
+  width: 250px;
+  height: 60px;
+}
+
+.Header .Left img{
+  width: 42px;
+}
+
+.Header .Left h1{
+  font-size: 21px;
+  padding-left: 15px;
+}
+
+.Header .Right{
+  width: 380px;
+  height: 60px;
+}
+
+.Header .Right ul{
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.Header .Right ul a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.Header .Right ul li{
+  list-style: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.Header .Right ul li:hover{
+  background-color: #fff;
+  color: #000;
+}
+.Header .Right ul li:hover a {
+  color: #000;
+}
+
+.Header .Right ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.Header .Right ul li i{
+  padding-right: 7px;
+}
+
+@media screen and (max-width:750px) {
+  .Header .Right ul li span{
+    display: none;
+  }
+  .Header .Right{
+    width: 170px;
+  }
+  .Header .Right ul li i{
+    padding-right: 0px;
+    font-size: 20px;
+  }
+  .Header .Right ul li{
+    padding: 10px;
+  }
+  .Header .Left h1{
+    display: none;
+  }
+  .Header .Left{
+    width: 70px
+  }
+}
+
+/* --------------------SignUp------------------------- */
+
+.SignUp .Right,
+.SignUp .Right form,
+.SignUp .Right form .Term,
+.SignUp .Right form .LoginBtn
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SignUp{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #1e1e1e;
+}
+
+.SignUp .Left{
+  width: 40%;
+  height: 100vh;
+  background-image: url('../src/img/SignUp.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.SignUp .Right{
+  width: 60%;
+  height: 100vh;
+  
+  color: #fff;
+
+  flex-direction: column;
+}
+
+.SignUp .Right form{
+  width: 70%;
+  min-height: 450px;
+  flex-direction: column;
+  gap: 20px;
+}
+.SignUp .Right h1{
+  font-size: 35px;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.SignUp .Right form .Row{
+  width: 90%;
+  height: 50px;
+  border-radius: 3px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.SignUp .Right form .Name{
+  display: flex;
+  justify-content: space-between;
+}
+
+.SignUp .Right form .FName,
+.SignUp .Right form .LName{
+  width: 45%;
+  height: 100%;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.SignUp .Right form .Email,
+.SignUp .Right form .UserName,
+.SignUp .Right form .Password{
+  position: relative;
+}
+
+.SignUp .Right form .Email p,
+.SignUp .Right form .UserName p,
+.SignUp .Right form #Passcheckpara{
+  position: absolute;
+  color: #FF3232;
+  font-size: 11px;
+  top: -16px;
+  right: 5px;
+  display: none;
+}
+.SignUp .Right form input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.SignUp .Right form i{
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
+  color: #000;
+}
+
+.SignUp .Right form .Password i:nth-of-type(2){
+  left: 95%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.SignUp .Right form .Term{
+  height: 20px;
+}
+
+.SignUp .Right form .Term{
+  justify-content: flex-start;
+  padding-left: 2px;
+  box-sizing: border-box;
+}
+
+.SignUp .Right form .Term p{
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.SignUp .Right form .Term input{
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+.SignUp .Right form .Submit{
+  margin-top: 10px;
+  /* background-color: var(--yelowish_green); */
+  height: 90px;
+}
+
+.SignUp .Right form .Submit .btn button{
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #02aaf7;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.SignUp .Right form .Submit  .LoginBtn{
+  width: 100%;
+  height: 40px;
+  /* background-color: var(--uYOVog); */
+}
+
+.SignUp .Right form .Submit button:hover{
+  background-color: #00a7f4e8;
+}
+
+.SignUp .Right form .LoginBtn{
+  display: flex;
+  height: 25px;
+  font-size: 15px;
+  /* background-color: #00660e; */
+}
+
+.SignUp .Right form .LoginBtn a{
+  padding-left: 10px;
+  text-decoration: none;
+  color: #02aaf7;
+}
+
+.SignUp .Right form .Password .PassAuthDiv{
+  position: absolute;
+  width: 300px;
+  min-height: 120px;
+  background-color: #fff;
+  top: -195px;
+  right: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #000;
+  border: 1px solid #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  display: none;
+}
+
+.SignUp .EverycloseDiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.SignUp .Right form .Password .PassAuthDiv p:not(:nth-child(1)){
+  padding: 3px 0 0 24px;
+  color: red;
+}
+
+
+.SignUp .Right form .Password .PassAuthDiv .down i{
+  position: absolute;
+  top: 175px;
+  color: #fff;
+  left: calc(50% - 5px);
+  
+}
+
+.SignUp .Right form .Password .PassAuthDiv .subRow{
+  width: 100%;
+  height: 25px;
+  position: relative;
+}
+
+.SignUp .Right form .Password .PassAuthDiv .subRow i{
+   position: absolute;
+   left: 5px;
+   top: calc(50% - 7px);
+   color: red;
+}
+.SignUp .Right form .Password .PassAuthDiv .subRow ion-icon{
+  position: absolute;
+  left: 3px;
+  top: calc(50% - 7px);
+  color: red;
+  font-size: 17px;
+}
+
+
+.SignUp .LoaderPage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+
+
+@media screen and (max-width:970px) {
+  .SignUp .Left{
+    width: 30%;
+  }
+  .SignUp .Right{
+    width: 70%;
+  }
+  .SignUp .Right form .Password i:nth-of-type(2){
+    left: 93%;
+  }
+  .SignUp .Right h1{
+    padding: 0 0 25px 0 ;
+  }
+}
+
+
+
+@media screen and (max-width:740px) {
+  .SignUp{
+    flex-direction: column;
+  }
+  .SignUp .Left{
+    width: 100%;
+    height: 150px;
+  }
+  .SignUp .Right{
+    width: 100%;
+    height: 600px;
+  }
+  .SignUp .Right h1{
+    font-size: 30px;
+  }
+  .SignUp .Right form .Row{
+    width: 90%;
+    height: 45px;
+  }
+  .SignUp .Right form .Submit{
+    height: 80px;
+  }
+  .SignUp .Right form input{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .SignUp .Right form{
+    width: 95%;
+  }
+  .SignUp .Right form .Term p{
+    font-size: 13px;
+  }
+  .SignUp .Right form .Password i:nth-of-type(2){
+    left: 92%;
+  }
+  .SignUp .Right h1{
+    font-size: 28px;
+  }
+}
+
+/* -------------------OTP--------------------- */
+
+.Otp,
+.Otp .Container .code,
+.Otp .Container .btn,
+.Otp .Container .clickforotp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Otp{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+
+}
+
+.Otp .Container{
+  width: 400px;
+  min-height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.Otp .Container .image{
+  width: 100%;
+  height: 250px;
+  background-image: url('../src/img/Otp.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: opt-zoom 2s infinite alternate-reverse;
+}
+
+@keyframes opt-zoom {
+  0%{
+    scale: 1;
+  }
+  100%{
+    scale: 1.1;
+  }
+}
+
+
+.Otp .Container h2{
+  text-align: center;
+  padding: 5px 0;
+  box-sizing: border-box;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.Otp .Container p{
+  text-align: center;
+  padding: 2px 0;
+}
+
+.Otp .Container p:nth-of-type(2){
+  color: #9d9d9d;
+}
+
+.Otp .Container .clickforotp{
+  width: 100%;
+  height: 90px;
+  /* background-color: var(--yellow); */
+
+}
+
+.Otp .Container .clickforotp button{
+  width: 90%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #02aaf7;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.Otp .Container .clickforotp button:hover{
+  background-color: #00a7f4e8;
+}
+
+.Otp .Container .code{
+  width: 100%;
+  height: 45px;
+  margin-top: 30px;
+}
+
+.Otp .Container .code .inpt{
+  width: 90%;
+  height: 100%;
+  position: relative;
+}
+
+.Otp .Container .code .inpt p{
+  position: absolute;
+  top: -19px;
+  right: 5px;
+  font-size: 11px;
+  color: #FF3232;
+  font-weight: 500;
+  display: none;
+}
+
+.Otp .Container .code .inpt input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #1e1e1e;
+}
+
+.Otp .Container .againotp p{
+  font-size: 14px;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.Otp .Container .againotp span{
+  padding-left: 5px;
+  color: #00a8f4;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Otp .Container .btn{
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+}
+
+.Otp .LoaderPage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+
+.Otp .Container .btn button{
+  width: 90%;
+  height: 100%;
+  border:none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #02aaf7;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Otp .Container .btn button:hover{
+  background-color: #00a7f4e8;
+}
+
+@media screen and (max-width:490px) {
+  .Otp .Container{
+    width: 300px;
+  }
+  .Otp .Container .againotp p{
+    font-size: 12px;
+  }
+}
+
+/* --------------------------Loading----------------------- */
+
+.Loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Loading{
+  width: 100%;
+  min-height: 100%;
+  backdrop-filter: blur(5px);
+  flex-direction: column;
+}
+
+.Loading img{
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.Loading .circle{
+  width: 50px;
+  height: 50px;
+  
+  border-radius: 50%;
+  border: 5px solid #ff2e55;
+  border-top: 5px solid #fff;
+  animation: circleload 2s linear infinite;
+}
+
+@keyframes circleload {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(359deg);
+  }
+}
+
+
+/* --------------------------Login----------------------- */
+
+.Login .Right,
+.Login .Right .Container form,
+.Login .Right .Container form .LoginBtn .signup,
+.Login .Right .Container .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #1e1e1e;
+}
+
+.Login .Left{
+  width: 45%;
+  height: 100vh;
+  /* background-color: #00660e; */
+  background-image:url('./img/LoginBg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Login .Right{
+  width: 55%;
+  height: 100vh;
+  /* background-color: #00bcd4; */
+  color: #fff;
+}
+
+.Login .Right .Container{
+  width: 600px;
+  min-height: 320px;
+  /* background-color: var(--yellow); */
+}
+
+.Login .Right .Container h1{
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+
+
+.Login .Right .Container form{
+  width: 100%;
+  height: 270px;
+  /* background-color: #1a62ff; */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Login .Right .Container form .Row{
+  width: 70%;
+  height: 50px;
+  /* background-color: var(--voilet); */
+  position: relative;
+}
+
+.Login .Right .Container form .Row input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 38px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.Login .Right .Container form .Row #Usercheckpara,
+.Login .Right .Container form .Row #Passcheckpara{
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  color: #FF3232;
+  font-size: 11px;
+  display: none;
+}
+
+
+.Login .Right .Container form .Row i{
+  position: absolute;
+  left: 11px;
+  top: calc(50% - 7px);
+  color: #000;
+}
+
+.Login .Right .Container form .Password i:nth-of-type(2){
+  left: 94%;
+  cursor: pointer;
+}
+
+.Login .Right .Container form .LoginBtn{
+  height: 80px;
+}
+
+.Login .Right .Container form .LoginBtn .btn{
+  width: 100%;
+  height: 50px;
+  /* background-color: #009688; */
+}
+
+.Login .Right .Container form .LoginBtn .btn button{
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-radius: 3px;
+  background-color: #02aaf7;
+  color: #fff;
+  cursor: pointer;
+}
+.Login .Right .Container form .LoginBtn .btn button:hover{
+  background-color: #00a7f4e8;
+}
+
+.Login .Right .Container form .LoginBtn .signup{
+  width: 100%;
+  height: 30px;
+  /* background-color: var(--uYOVog); */
+  font-size: 14px;
+}
+
+.Login .Right .Container form .LoginBtn .signup
+span{
+  font-weight: 600;
+  cursor: pointer;
+  color: #02aaf7;
+  padding-left: 2px;
+  box-sizing: border-box;
+}
+
+
+.Login .Right .Container form .forgetpass{
+  width: 70%;
+  height: 18px;
+  /* background-color: #009688; */
+  display: flex;
+}
+
+.Login .Right .Container form .forgetpass .forgetLeft{
+  width: 50%;
+  height: 18px;
+  /* background-color: #00c4cc; */
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  padding-left: 2px;
+  box-sizing: border-box;
+}
+.Login .Right .Container form .forgetpass .forgetLeft p{
+  padding-left: 5px;
+  margin-bottom: 1px;
+  box-sizing: border-box;
+}
+
+.Login .Right .Container form .forgetpass .forgetRight{
+  width: 50%;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: flex-end;
+  padding-right: 5px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.Login .Right .Container form .forgetpass .forgetRight span{
+  padding-left: 5px;
+  margin-bottom: 1px;
+  box-sizing: border-box;
+  color: #02aaf7;
+  cursor: pointer;
+}
+
+.Login .LoaderPage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+
+@media screen and (max-width:780px) {
+  .Login .Right .Container form .Password i:nth-of-type(2){
+    left: 92%;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .Login{
+    flex-direction: column;
+  }
+  .Login .Left{
+   width: 100%;
+   height: 200px;
+  }
+  .Login .Right{
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .Login .Right .Container form .Row,
+  .Login .Right .Container form .forgetpass{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .Login .Left{
+    height: 150px;
+   }
+}
+
+@media screen and (max-width:400px) {
+  .Login .Right .Container h1{
+    font-size: 31px;
+    margin-bottom: 10px;
+  }
+  .Login .Right .Container form .Row,
+  .Login .Right .Container form .LoginBtn .btn{
+    height: 45px;
+    
+  }
+}
+
+/* --------------------------Forgot----------------------- */
+
+.Forgot,
+.Forgot .Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Forgot{
+  width: 100%;
+  min-height: 100vh;
+  background-image:linear-gradient(to right top, #58585833, #5151519c, #454545c7, #41414197, #53535366),url('./img/ForgotBg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Forgot .Container{
+  width: 500px;
+  min-height: 400px;
+  /* background-color: #00660e; */
+  flex-direction: column;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.Forgot .Container img{
+  width: 50px;
+}
+
+.Forgot .Container h1{
+  font-size: 25px;
+  padding: 10px 0 0 0;
+  box-sizing: border-box;
+}
+
+.Forgot .Container .Headtext p{
+  padding: 5px 10px 20px 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.Forgot .Container form{
+  width: 100%;
+  min-height: 200px;
+  /* background-color: var(--yelowish_green); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Forgot .Container form .Row{
+  width: 90%;
+  height: 50px;
+  /* background-color: var(--voilet); */
+}
+
+
+
+.Forgot .Container form .Row input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-left: 37px;
+  box-sizing: border-box;
+}
+
+.Forgot .Container form .Row button{
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #02aaf7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Forgot .Container form .Row button:hover{
+  background-color: #00a7f4e8;
+}
+
+.Forgot .Container form .Email{
+  position: relative;
+}
+
+.Forgot .Container form .Email #Emailcheckpara{
+  position: absolute;
+  right: 5px;
+  top: -15px;
+  color: #FF3232;
+  font-size: 11px;
+  display: none;
+}
+
+.Forgot .Container form .Email i{
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
+  color: #000;
+}
+
+.Forgot .Container form .otpverify input{
+  padding: 0;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.Forgot .Container form .info {
+  font-size: 15px;
+}
+
+.Forgot .Container form .info p{
+  padding: 0 10px;
+  text-align: center;
+}
+
+.Forgot .Container form .info span{
+  padding-left: 5px;
+  font-weight: 600;
+  color: #02aaf7;
+  cursor: pointer;
+}
+
+.Forgot .LoaderPage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+@media screen and (max-width:540px) {
+  .Forgot .Container{
+    width: 90%;
+  }
+  .Forgot .Container form .Row{
+    height: 45px;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .Forgot .Container h1{
+    font-size: 22px;
+  }
+  
+  .Forgot .Container .Headtext p{
+    font-size: 13px;
+  }
+}
